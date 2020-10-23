@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter, { RouteConfig } from 'vue-router'
 import Home from '../views/Home.vue'
+import Gobang from '../views/gobang/index.vue'
 
 Vue.use(VueRouter)
 
@@ -8,7 +9,13 @@ const routes: Array<RouteConfig> = [
   {
     path: '/',
     name: 'Home',
+    redirect: 'gobang',
     component: Home
+  },
+  {
+    path: '/gobang',
+    name: 'Gobang',
+    component: Gobang
   },
   {
     path: '/about',
