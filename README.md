@@ -1,4 +1,4 @@
-# gobang
+# games
 
 ## Project setup
 ```
