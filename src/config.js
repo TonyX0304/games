@@ -1,7 +1,7 @@
 import { version } from '../package'
 const isProd = process.env.NODE_ENV === 'production'
-const online = location.hostname === 'admin.kuagejing.com'
-let api = 'https://api-admin.kuagejing.com/'
+const online = location.hostname === 'localhost'
+let api = 'https://localhost/'
 const subdomain = location.hostname.split('.')[0]
 switch (subdomain) {
   case 'dev': // 开发
@@ -9,10 +9,10 @@ switch (subdomain) {
     api = 'localhost:9527'
     break
   case 'test-admin': // 测试环境
-    api = 'http://test-admin.kuagejing.com/api/'
+    api = 'http://test.com/api/'
     break
   case 'pre-admin': // 预发布
-    api = 'https://pre-admin.kuagejing.com/japi/'
+    api = 'https://pre.com/japi/'
     break
 }
 // 接口通用请求参数
