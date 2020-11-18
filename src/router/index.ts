@@ -9,7 +9,7 @@ const routes: Array<RouteConfig> = [
   {
     path: '/',
     name: 'Home',
-    redirect: 'gobang',
+    // redirect: 'gobang',
     component: Home
   },
   {
