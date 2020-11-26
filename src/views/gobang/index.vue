@@ -142,6 +142,7 @@ export default {
       return num >= 5
     },
     reset() {
+      this.winner = null
       this.init()
     }
   }
