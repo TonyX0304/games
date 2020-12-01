@@ -6,7 +6,8 @@ const subdomain = location.hostname.split('.')[0]
 switch (subdomain) {
   case 'dev': // 开发
   case 'localhost':
-    api = 'http://localhost:8080/api'
+    // api = 'http://localhost:8080/api' // 反向代理
+    api = 'http://localhost:9527'
     break
   case 'test-admin': // 测试环境
     api = 'http://test.com/api/'
